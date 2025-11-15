@@ -25,7 +25,7 @@ if($result) {
             echo $row["address"] . " ";
             echo $row["city"] . " ";
             echo $row["province"] . " ";
-            echo $row["postalcode"] . "<br>";
+            echo $row["postal_code"] . "<br>";
         }
     } else {
         echo "No records found";

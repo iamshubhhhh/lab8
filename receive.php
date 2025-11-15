@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $province = mysqli_real_escape_string($conn, $province);
     $postal_code = mysqli_real_escape_string($conn, $postal_code);
 
-    $sql = "INSERT INTO client_info (email, address, city, province, postalcode)
+    $sql = "INSERT INTO client_info (email, address, city, province, postal_code)
             VALUES ('$email', '$address', '$city', '$province', '$postal_code')";
 
     if (mysqli_query($conn, $sql)) {
